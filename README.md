@@ -61,6 +61,7 @@ Before deciding, it's recommended to experiment with both approaches, validate t
 ## 5. Cross-Validation and Evaluation:
 - Split your data into training and testing sets (or consider time-based cross-validation for time series data).
 - Evaluate your models using appropriate metrics for time series data, such as Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and potentially metrics that account for direction like Mean Absolute Percentage Error (MAPE).
+- fold cross validation
 ## 6. Hyperparameter Tuning
 - Fine-tune hyperparameters of your chosen models to improve performance.
 ## 7. Ensemble Techniques
