@@ -4,6 +4,48 @@
 A chill guide to get started with XGboost
 
 
+## models to test for performance
+-   due to high volatility nature of oil price, non-linear time series based forecasting provide the best forecasting
+- use past oil prices and macroeconomic features 
+- oil prices are non linear and complex
+## Model Ensembles
+Combining two or more machine learning models to maximize performance is known as model ensemble. Ensembling can often lead to better predictive power and more robust results compared to individual models. There are various ensemble techniques you can use. Here are a few common approaches:
+
+1. **Voting Ensembles**:
+   - **Hard Voting**: In this approach, you train multiple models independently and make predictions with each. The final prediction is the majority vote of the individual model predictions.
+   - **Soft Voting**: Instead of counting votes, you can assign weights to each model's prediction probabilities and calculate a weighted average.
+
+2. **Bagging**:
+   - **Random Forest**: This is a well-known ensemble of decision trees. It combines the predictions of multiple decision trees trained on random subsets of the data.
+   - **Bagged Ensembles**: You can apply bagging to various base models like decision trees, support vector machines, or any other model.
+
+3. **Boosting**:
+   - **AdaBoost**: Iteratively trains models on the same data, assigning higher weights to misclassified examples in each iteration.
+   - **Gradient Boosting (e.g., XGBoost, LightGBM)**: Builds models sequentially, focusing on the errors of previous models.
+   - **Stacking**: In stacking, you combine multiple models by training a "meta-model" on their predictions. The predictions of the base models become inputs for the meta-model.
+
+4. **Neural Network Ensembles**:
+   - Ensembling multiple neural networks with different architectures or initializations and averaging their predictions.
+
+5. **Hybrid Approaches**:
+   - Combining both regression and time series models, as discussed earlier, can be an example of a hybrid ensemble.
+
+Steps to Ensemble Models:
+
+1. **Train Individual Models**: Train multiple models using different algorithms, hyperparameters, or subsets of features.
+
+2. **Generate Predictions**: Make predictions on your validation or test dataset using each of the trained models.
+
+3. **Combine Predictions**:
+   - For a voting ensemble, tally up votes or average probabilities.
+   - For bagging or boosting, combine predictions according to their respective algorithms.
+
+4. **Evaluate**: Evaluate the ensemble's performance using appropriate metrics on your validation or test dataset.
+
+5. **Tune Ensemble**:
+   - You can adjust weights, hyperparameters, or other settings to fine-tune the ensemble's performance.
+
+It's important to note that ensemble techniques don't guarantee performance improvement for all datasets. It's recommended to test different ensemble strategies and compare them against the individual models. Be cautious of overfitting, as ensembles can lead to overfitting if not done properly. Ensembling can be computationally expensive, so consider the trade-off between performance gain and computation time.
 ## Feature Importance
 Helps determine which features has a high corrlelation with the target values 
 
