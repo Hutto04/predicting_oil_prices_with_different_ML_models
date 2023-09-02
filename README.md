@@ -56,8 +56,9 @@ Determines if the model is over, under, or good fit.
 Can also help determine if the dataset is unrepresented. 
 
 reference:
- I.https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/
-II.https://machinelearningmastery.com/tune-xgboost-performance-with-learning-curves/
+ I.https://machinelearningmastery.com/tune-xgboost-performance-with-learning-curves/
+ II.https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/
+III.https://machinelearningmastery.com/tune-xgboost-performance-with-learning-curves/
 
 
 ## Time series based XGBoost VS Regression based XGBoost
