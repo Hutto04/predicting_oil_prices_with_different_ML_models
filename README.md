@@ -1,3 +1,9 @@
+# Predicting_Real_Oil_Prices
+1. This project was for my software engineering class. Where the client ( a business professor ) gave us two datasets consisted of historical macroeconomic data and nominal oil prices.
+2. My group was tasked to train a machine learning model to predict future oil prices with the given data.
+
+
+
 
 # XGBoost guide
 
